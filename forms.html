@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML forms</title>
+    <style>
+        /* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Form container */
+form {
+    background: white;
+    padding: 25px 35px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    width: 350px;
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Each input block */
+div {
+    margin-bottom: 15px;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Inputs & select */
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* Focus effect */
+input:focus, select:focus {
+    border-color: #e23744;
+    outline: none;
+}
+
+/* Radio buttons */
+input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #e23744;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Button hover */
+button:hover {
+    background: #c92c3a;
+}
+    </style>
+</head>
+<body>
+    
+    <h1>Forms in html</h1>
+  <form action="/submit.php">
+  <div>
+    <label for="name">Name</label>
+    <input id="name" type="text" placeholder="Enter Name:">
+    <BR></BR>
+  </div>
+  <div>
+    <label for="Contact">Contact</label>
+    <input id="Contact" type="tel" placeholder="Enter number:"></label>
+    <br></div><br>
+  </div>
+  <div>
+    <label for="email">E-Mail</label>
+    <input type="text" name="E-Mail" id="email" required>
+    <br></br>
+  </div>
+  <div>
+    <label for="Password">Password</label>
+    <input id="Password" type="password" placeholder="Enter Password" required>
+    <br></div><br>
+  </div>
+  <div>
+    <label for="dob">dob</label>
+    <input type="date" placeholder="dob" id="dob" required>
+  </div><br></br>
+
+<div>
+    <label for="gender">Gender</label>
+    <select id="gender" required>
+        <option value="disabled selected">select gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="SheMale">6</option>
+    </select>
+</div>
+<div>
+    <p>Subscription plans</p>
+    <input id="basic" type="radio" name="Subscription" value="basic">
+    <label for="basic">Basic</label>
+    <input type="radio" id="basic",name="Subscription" value="premium">
+    <label for="Premium">premium</label><br></br>
+    </div>
+
+</div>
+<div><button type="submit">Submit</button></div>
+
+    </form>
+
+
+    
+</body>
+</html>
